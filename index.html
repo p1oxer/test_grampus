@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Милый дом</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="modal" class="modal">
+            <div class="modal__body">
+                <div class="modal__img"><img src="./img/modal-chair.png" alt=""></div>
+                <div data-fancybox-close class="modal__close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4142 20.265L6.64917 6.5" stroke="white" stroke-width="2" stroke-linecap="square" />
+                        <path d="M20.265 6.61758L6.5 20.3826" stroke="white" stroke-width="2" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <h2 class="modal__title">Оставьте заявку</h2>
+                <h3 class="modal__subtitle">И я свяжусь с вами для обсуждения</h3>
+                <form class="modal__form">
+                    <input autocomplete="off" type="text" placeholder="Ваше имя" class="modal__input p1">
+                    <input autocomplete="off" type="tel" placeholder="Ваш телефон*" required class="modal__input p1">
+                    <button data-fancybox-close type="button" class="modal__button button next-popup">Оставить заявку</button>
+                </form>
+                <div class="modal__agreement p2">*Нажимая на кнопку, Вы соглашаетесь <br>
+                    <a href="">на обработку персональных данных</a>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal__done">
+            <div class="modal__body">
+                <div data-fancybox-close class="modal__close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4142 20.265L6.64917 6.5" stroke="white" stroke-width="2" stroke-linecap="square" />
+                        <path d="M20.265 6.61758L6.5 20.3826" stroke="white" stroke-width="2" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <h2 class="modal__title">Заявка успешно отправлена</h2>
+                <button data-fancybox-close type="button" class="button">Закрыть</button>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__container">
+                <div class="container">
+                    <div class="header__body body-header">
+                        <div class="body-header__logo"><img src="./img/logo.png" alt=""></div>
+                        <div class="body-header__socials">
+                            <a href="" class="social-tg">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.7316 2.42877C21.7316 2.42877 23.8131 1.55223 23.6396 3.68098C23.5818 4.55752 23.0615 7.62543 22.6567 10.9437L21.2691 20.7735C21.2691 20.7735 21.1535 22.2136 20.1128 22.4639C19.072 22.7143 17.511 21.5875 17.2219 21.337C16.9907 21.1491 12.8857 18.3317 11.4403 16.9543C11.0355 16.5786 10.573 15.8273 11.498 14.9507L17.5688 8.68975C18.2626 7.93848 18.9565 6.18542 16.0656 8.31417L7.97122 14.2621C7.97122 14.2621 7.04613 14.8882 5.31165 14.3247L1.55352 13.0725C1.55352 13.0725 0.165912 12.1333 2.53641 11.1942C8.31817 8.25152 15.4296 5.24617 21.7316 2.42877Z" fill="white" />
+                                </svg>
+                            </a>
+                            <a href="" class="social-whatsapp">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4029 0H12.3969C5.7804 0 0.399902 5.382 0.399902 12C0.399902 14.625 1.2459 17.058 2.6844 19.0335L1.1889 23.4915L5.8014 22.017C7.6989 23.274 9.9624 24 12.4029 24C19.0194 24 24.3999 18.6165 24.3999 12C24.3999 5.3835 19.0194 0 12.4029 0ZM19.3854 16.9455C19.0959 17.763 17.9469 18.441 17.0304 18.639C16.4034 18.7725 15.5844 18.879 12.8274 17.736C9.3009 16.275 7.0299 12.6915 6.8529 12.459C6.6834 12.2265 5.4279 10.5615 5.4279 8.8395C5.4279 7.1175 6.3024 6.279 6.6549 5.919C6.9444 5.6235 7.4229 5.4885 7.8819 5.4885C8.0304 5.4885 8.1639 5.496 8.2839 5.502C8.6364 5.517 8.8134 5.538 9.0459 6.0945C9.3354 6.792 10.0404 8.514 10.1244 8.691C10.2099 8.868 10.2954 9.108 10.1754 9.3405C10.0629 9.5805 9.9639 9.687 9.7869 9.891C9.6099 10.095 9.4419 10.251 9.2649 10.47C9.1029 10.6605 8.9199 10.8645 9.1239 11.217C9.3279 11.562 10.0329 12.7125 11.0709 13.6365C12.4104 14.829 13.4964 15.21 13.8849 15.372C14.1744 15.492 14.5194 15.4635 14.7309 15.2385C14.9994 14.949 15.3309 14.469 15.6684 13.9965C15.9084 13.6575 16.2114 13.6155 16.5294 13.7355C16.8534 13.848 18.5679 14.6955 18.9204 14.871C19.2729 15.048 19.5054 15.132 19.5909 15.2805C19.6749 15.429 19.6749 16.1265 19.3854 16.9455Z" fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <nav class="body-header__nav">
+                            <ul class="body-header__list">
+                                <li class="body-header__item"><a href="" class="body-header__link p1">Преимущества</a></li>
+                                <li class="body-header__item"><a href="" class="body-header__link p1">Услуги</a></li>
+                                <li class="body-header__item"><a href="" class="body-header__link p1">Портфолио</a></li>
+                                <li class="body-header__item body-header__item--name">
+                                    <p>Милый дом</p><span>Маленькие студии <br> продуманный дизайн</span>
+                                </li>
+                                <li class="body-header__item"><a href="" class="body-header__link p1">Расценки</a></li>
+                                <li class="body-header__item"><a href="" class="body-header__link p1">Обо мне</a></li>
+                                <li class="body-header__item"><a href="" class="body-header__link p1">Отзывы</a></li>
+                            </ul>
+                        </nav>
+                        <div class="body-header__phone">
+                            <h4><a href="tel:88005553535">+7 800 555 35 35</a></h4>
+                            <h4><button type="button">Обратный звонок</button></h4>
+                        </div>
+                        <div class="header__menu menu">
+                            <button type="button" class="menu__icon icon-menu"><span></span></button>
+                            <nav class="menu__body">
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a href="" class="menu__link">
+                                            <h4>Преимущества</h4>
+                                        </a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">
+                                            <h4>Услуги</h4>
+                                        </a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">
+                                            <h4>Портфолио</h4>
+                                        </a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">
+                                            <h4>Расценки</h4>
+                                        </a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">
+                                            <h4>Обо мне</h4>
+                                        </a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">
+                                            <h4>Отзывы</h4>
+                                        </a></li>
+                                    <li>
+                                        <div class="body-header__socials menu-socials">
+                                            <a href="" class="social-tg">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M21.7316 2.42877C21.7316 2.42877 23.8131 1.55223 23.6396 3.68098C23.5818 4.55752 23.0615 7.62543 22.6567 10.9437L21.2691 20.7735C21.2691 20.7735 21.1535 22.2136 20.1128 22.4639C19.072 22.7143 17.511 21.5875 17.2219 21.337C16.9907 21.1491 12.8857 18.3317 11.4403 16.9543C11.0355 16.5786 10.573 15.8273 11.498 14.9507L17.5688 8.68975C18.2626 7.93848 18.9565 6.18542 16.0656 8.31417L7.97122 14.2621C7.97122 14.2621 7.04613 14.8882 5.31165 14.3247L1.55352 13.0725C1.55352 13.0725 0.165912 12.1333 2.53641 11.1942C8.31817 8.25152 15.4296 5.24617 21.7316 2.42877Z" fill="white" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="social-whatsapp">
+                                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.4029 0H12.3969C5.7804 0 0.399902 5.382 0.399902 12C0.399902 14.625 1.2459 17.058 2.6844 19.0335L1.1889 23.4915L5.8014 22.017C7.6989 23.274 9.9624 24 12.4029 24C19.0194 24 24.3999 18.6165 24.3999 12C24.3999 5.3835 19.0194 0 12.4029 0ZM19.3854 16.9455C19.0959 17.763 17.9469 18.441 17.0304 18.639C16.4034 18.7725 15.5844 18.879 12.8274 17.736C9.3009 16.275 7.0299 12.6915 6.8529 12.459C6.6834 12.2265 5.4279 10.5615 5.4279 8.8395C5.4279 7.1175 6.3024 6.279 6.6549 5.919C6.9444 5.6235 7.4229 5.4885 7.8819 5.4885C8.0304 5.4885 8.1639 5.496 8.2839 5.502C8.6364 5.517 8.8134 5.538 9.0459 6.0945C9.3354 6.792 10.0404 8.514 10.1244 8.691C10.2099 8.868 10.2954 9.108 10.1754 9.3405C10.0629 9.5805 9.9639 9.687 9.7869 9.891C9.6099 10.095 9.4419 10.251 9.2649 10.47C9.1029 10.6605 8.9199 10.8645 9.1239 11.217C9.3279 11.562 10.0329 12.7125 11.0709 13.6365C12.4104 14.829 13.4964 15.21 13.8849 15.372C14.1744 15.492 14.5194 15.4635 14.7309 15.2385C14.9994 14.949 15.3309 14.469 15.6684 13.9965C15.9084 13.6575 16.2114 13.6155 16.5294 13.7355C16.8534 13.848 18.5679 14.6955 18.9204 14.871C19.2729 15.048 19.5054 15.132 19.5909 15.2805C19.6749 15.429 19.6749 16.1265 19.3854 16.9455Z" fill="white" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="body-header__phone menu-phone">
+                                            <h4><a href="tel:88005553535">+7 800 555 35 35</a></h4>
+                                            <h4><button type="button">Обратный звонок</button></h4>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+
+
+                <div class="banner__container">
+
+                    <div class="banner__body body-banner">
+                        <div class="" id="scene">
+                            <div class="box" data-depth="0.2">
+                                <img src="./img/banner/01.png" class="banner__img counter" alt="">
+                                <img src="./img/banner/03.png" class="banner__img chair" alt="">
+                                <img src="./img/banner/04.png" class="banner__img bed" alt="">
+                            </div>
+                        </div>
+                        <img src="./img/banner/02.png" class="banner__img lamp" alt="">
+                        <img src="./img/banner/05.png" class="banner__img flower" alt="">
+                        <img src="./img/banner/stars1.png" class="banner__img stars" alt="">
+                        <h5 class="body-banner__subtitle">Работаю в Москве и Московской области</h5>
+                        <h1 class="body-banner__title">ДИЗАЙН ИНТЕРЬЕРА <br>
+                            КВАРТИР-СТУДИЙ</h1>
+                        <button type="button" class="body-banner__button button modal-open">Оставить заявку</button>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <h2>Что я могу сделать для вас</h2>
+                    <div class="services__body body-services">
+                        <div class="body-services__item item-body-services">
+                            <div class="item-body-services__img"><img src="./img/services/01.png" alt=""></div>
+                            <button type="button" class="item-body-services__button button-next">
+                                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 2L16.5 16.9368L1.5 32" stroke="#DF875A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="item-body-services__info">
+                                <h4>Проектирование объекта</h4>
+                                <p class="p2">Предложить удобное планировочное решение в виде наглядной 3д модели</p>
+                                <p class="p2">Предложить удобное планировочное решение в виде наглядной 3д модели</p>
+                            </div>
+                        </div>
+                        <div class="body-services__item item-body-services">
+                            <div class="item-body-services__img"><img src="./img/services/02.png" alt=""></div>
+                            <button type="button" class="item-body-services__button button-next">
+                                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 2L16.5 16.9368L1.5 32" stroke="#DF875A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="item-body-services__info">
+                                <h4>Подбор отделочных материалов</h4>
+                                <p class="p2">Подобрать отделочные материалы и мебель, сориентировать по приобретению и стоимости</p>
+                            </div>
+                        </div>
+                        <div class="body-services__item item-body-services">
+                            <div class="item-body-services__img"><img src="./img/services/03.png" alt=""></div>
+                            <button type="button" class="item-body-services__button button-next">
+                                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 2L16.5 16.9368L1.5 32" stroke="#DF875A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="item-body-services__info">
+                                <h4>Подбор отделочных материалов</h4>
+                                <p class="p2">Предложить удобное планировочное решение в виде наглядной 3д модели</p>
+                            </div>
+                        </div>
+                        <div class="body-services__item item-body-services">
+                            <div class="item-body-services__img"><img src="./img/services/04.png" alt=""></div>
+                            <button type="button" class="item-body-services__button button-next">
+                                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 2L16.5 16.9368L1.5 32" stroke="#DF875A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="item-body-services__info">
+                                <h4>Проектирование объекта</h4>
+                                <p class="p2">Предложить удобное планировочное решение в виде наглядной 3д модели</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="services__button button modal-open">Оставить заявку</button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="container">
+                    <div class="footer__body">
+                        <a href="" class="footer__policy p1">Политика конфиденциальности</a>
+                        <div class="footer__author">Сайт разработан <a href="https://grampus-studio.ru/">GRAMPUS</a></div>
+                        <p class="footer__copyright p1">© 2024. «Milydom»</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/script.js"></script>
+
+</html>
